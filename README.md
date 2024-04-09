@@ -7,13 +7,13 @@ Espero les guste y cualquier feedback es bienvenido :)
 
 ## Instalación
 
-Clonar el repositorio: # git clone https://github.com/melisaamoreno/front-test.git)
+Clonar el repositorio:  git clone https://github.com/melisaamoreno/front-test.git)
 
-Ubicarse en la carpeta del proyecto:# cd front-test
+Ubicarse en la carpeta del proyecto: cd front-test
 
-Instalar dependencias: # npm install
+Instalar dependencias:  npm install
 
 ## Levantar el proyecto
- Correr el comando: # npm run dev
+ Correr el comando:  npm run dev
  
- Abrir en el navegador: # http://localhost:3000
+ Abrir en el navegador:  http://localhost:3000
