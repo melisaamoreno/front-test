@@ -3,7 +3,7 @@ Hola! Esta es una web app simulando ser una aplicación para ver opciones de cer
 Para esta app usé React js con Next 14, y estilando con ChakraUI (https://chakra-ui.com/).
 Espero les guste y cualquier feedback es bienvenido :)
 
-# Deploy: https://front-test-amber.vercel.app/
+## Deploy: https://front-test-amber.vercel.app/
 
 ## Instalación
 Clonar el repositorio: git clone https://github.com/melisaamoreno/front-test.git)
