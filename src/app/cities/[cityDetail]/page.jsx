@@ -30,7 +30,9 @@ export default function CityDetail({ params }) {
       <Navbar />
 
       {loading ? (
-        <p>Loading...</p>
+        <Heading fontSize={18} m={15}>
+          Cargando...
+        </Heading>
       ) : (
         <>
           <Card p={20}>
