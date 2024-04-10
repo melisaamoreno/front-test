@@ -27,7 +27,6 @@ export const BrewingList = () => {
       });
   }, []);
 
-  //   console.log(brewing);
   return (
     <>
       <Alert
@@ -54,7 +53,7 @@ export const BrewingList = () => {
       <Heading m={15}>Todas las opciones</Heading>
       <Stack direction={"row"} overflowX={"auto"} p={20}>
         {loading ? (
-          <p>Loading...</p>
+          <Heading fontSize={18}>Cargando...</Heading>
         ) : (
           brewing.map((item) => {
             return (

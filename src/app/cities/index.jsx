@@ -17,19 +17,17 @@ export const CitiesList = () => {
   const [cities, setCities] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  async function fetchData() {
-    const res = await fetch(
-      `https://api.openbrewerydb.org/v1/breweries?by_city=san_diego&per_page=3`
-    );
-    const cities = await res.json();
-    setCities(cities);
-    setLoading(false);
-  }
   useEffect(() => {
-    fetchData();
+    fetch(
+      `https://api.openbrewerydb.org/v1/breweries?by_city=san_diego&per_page=3`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setCities(data);
+        setLoading(false);
+      });
   }, []);
 
-  console.log(cities);
   return (
     <>
       <Heading color={"white"} mt={20} p={15}>
@@ -37,7 +35,9 @@ export const CitiesList = () => {
       </Heading>
 
       {loading ? (
-        <p>Loading...</p>
+        <Heading fontSize={18} m={20} textAlign={"center"}>
+          Cargando...
+        </Heading>
       ) : (
         <Stack direction={"row"} overflowX={"auto"} p={10} mb={15}>
           {cities.map((item) => {

@@ -26,7 +26,6 @@ export default function BrewDetail({ params }) {
       });
   }, []);
 
-  // console.log(brewing);
   return (
     <>
       <Navbar />
