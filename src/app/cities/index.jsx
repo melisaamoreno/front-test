@@ -35,7 +35,7 @@ export const CitiesList = () => {
       </Heading>
 
       {loading ? (
-        <Heading fontSize={18} m={20} textAlign={"center"}>
+        <Heading fontSize={18} m={20}>
           Cargando...
         </Heading>
       ) : (
