@@ -3,7 +3,7 @@ import { Box, Text, Button } from "@chakra-ui/react";
 import { TfiAlignJustify } from "react-icons/tfi";
 import { FaUser, FaBell } from "react-icons/fa";
 import { GoArrowLeft } from "react-icons/go";
-
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export const Navbar = () => {
@@ -12,6 +12,14 @@ export const Navbar = () => {
   useEffect(() => {
     setToggle(window.location.pathname);
   }, []);
+
+  const router = useRouter();
+
+  const handleRedirectToHome = () => {
+    if (toggle !== "/") {
+      router.push("/");
+    }
+  };
 
   return (
     <Box
@@ -28,7 +36,11 @@ export const Navbar = () => {
           {toggle === "/" ? (
             <TfiAlignJustify color="white" fontSize={"25"} />
           ) : (
-            <GoArrowLeft color="white" fontSize={"25"} />
+            <GoArrowLeft
+              color="white"
+              fontSize={"25"}
+              onClick={handleRedirectToHome}
+            />
           )}
         </Text>
       </Box>
