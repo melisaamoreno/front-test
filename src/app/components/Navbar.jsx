@@ -24,7 +24,7 @@ export const Navbar = () => {
       justifyContent={"space-between"}
     >
       <Box>
-        <Text m={10} onClick={() => setToggle("/")}>
+        <Text m={10}>
           {toggle === "/" ? (
             <TfiAlignJustify color="white" fontSize={"25"} />
           ) : (
